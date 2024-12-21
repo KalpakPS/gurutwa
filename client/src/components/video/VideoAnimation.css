@@ -1,0 +1,31 @@
+/* Video Container */
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0a0606;
+  z-index: 9998;
+}
+
+/* Fade-out animation for video */
+.fade-out-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: fadeOut 1s ease-out 2s forwards; /* 2s delay before fade-out */
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
