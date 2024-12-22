@@ -1,15 +1,31 @@
 .loading-page {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #0a0606;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0a0606;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
 
- 
+/* Icon Size for Mobile Phones */
+@media (max-width: 700px) {
+  .loading-page .lottie-icon {
+    width: 250px;  
+    height: 200px;
+    margin-bottom: 30%;
+  }
+}
+
+/* Icon Size for Desktops */
+@media (min-width: 701px) {
+  .loading-page .lottie-icon {
+    width: 450px;  
+    height: 400px;
+  }
+}
+
