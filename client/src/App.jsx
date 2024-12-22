@@ -1,11 +1,15 @@
 import { useEffect, useState } from 'react'
 import Loading from './components/Loading'
 import VideoAnimation from './components/video/VideoAnimation'
+import NavBar from './components/Navbar'
+import 'bootstrap/dist/css/bootstrap.min.css';  // Import Bootstrap CSS
+
 
 const App = () => {
   const [isLoading, setLoading] = useState(true)
   const [showVideo, setShowVideo] = useState(false); // State for video animation
 
+ 
   useEffect(() => {
     // Hide loading screen and show video after 5 seconds
     setTimeout(() => {
@@ -28,6 +32,7 @@ const App = () => {
         <div>
           <h1>Welcome to Gurutwa Tech Fest</h1>
           <p>Exciting events and updates are coming soon!</p>
+          <NavBar />
         </div>
       )}
     </div>
