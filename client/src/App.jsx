@@ -11,7 +11,7 @@ const App = () => {
     setTimeout(() => {
       setLoading(false); // Stop loading animation
       setShowVideo(true); // Show video
-    }, 5000);
+    }, 4000);
 
     // Hide video after 3 more seconds
     setTimeout(() => {
@@ -21,16 +21,17 @@ const App = () => {
 
   return (
     <div>
-      {isLoading && <Loading isLoading={isLoading} />}
+      <Loading isLoading={isLoading} />
       <VideoAnimation showVideo={showVideo} />
+
       {!isLoading && !showVideo && (
-        <div className="main-content">
+        <div>
           <h1>Welcome to Gurutwa Tech Fest</h1>
           <p>Exciting events and updates are coming soon!</p>
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
 export default App
