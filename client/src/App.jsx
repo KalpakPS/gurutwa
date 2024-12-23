@@ -30,9 +30,9 @@ const App = () => {
 
       {!isLoading && !showVideo && (
         <div>
+          <NavBar />
           <h1>Welcome to Gurutwa Tech Fest</h1>
           <p>Exciting events and updates are coming soon!</p>
-          <NavBar />
         </div>
       )}
     </div>

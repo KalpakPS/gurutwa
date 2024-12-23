@@ -7,7 +7,14 @@ const NavBar = () => {
     return (
         <>
         <Navbar bg="dark" variant="dark" expand="lg">
-            <Navbar.Brand href="/">Logo</Navbar.Brand>
+            <Navbar.Brand href="/" className="ps-3">
+            <img src="/GURUTWA logo white.png" 
+            alt="Logo" 
+            width="150" 
+            height="48" 
+            class="d-inline-block align-text-top" 
+            />
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
