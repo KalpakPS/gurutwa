@@ -1,0 +1,32 @@
+.homepage {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.features, .about, .contact {
+    margin: 20px 0;
+}
+
+.features h2, .about h2, .contact h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+.feature-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.about p, .contact p {
+    color: #666;
+}
