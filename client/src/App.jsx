@@ -3,7 +3,7 @@ import Loading from './components/Loading'
 import VideoAnimation from './components/video/VideoAnimation'
 import NavBar from './components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';  // Import Bootstrap CSS
-import Hero from './components/Hero/Hero';
+import HomePage from './pages/HomePage/HomePage';
 
 
 const App = () => {
@@ -30,10 +30,8 @@ const App = () => {
       <VideoAnimation showVideo={showVideo} />
       <div>
         <NavBar />
-        <h1>Welcome to Gurutwa Tech Fest</h1>
-        <p>Exciting events and updates are coming soon!</p>
-        <Hero />
       </div>
+      <HomePage />
     </div>
   )
 }
