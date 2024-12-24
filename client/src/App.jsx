@@ -3,7 +3,8 @@ import Loading from './components/Loading'
 import VideoAnimation from './components/video/VideoAnimation'
 import NavBar from './components/Navbar'
 import 'bootstrap/dist/css/bootstrap.min.css';  // Import Bootstrap CSS
-
+import Events from './components/Events';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
 const App = () => {
   const [isLoading, setLoading] = useState(true)
@@ -30,9 +31,15 @@ const App = () => {
 
       {!isLoading && !showVideo && (
         <div>
-          <NavBar />
           <h1>Welcome to Gurutwa Tech Fest</h1>
           <p>Exciting events and updates are coming soon!</p>
+          <Router>
+            <NavBar />
+            <Routes>
+              <Route path='/events' element={<Events/>}/>
+            </Routes>
+          </Router>
+          
         </div>
       )}
     </div>
