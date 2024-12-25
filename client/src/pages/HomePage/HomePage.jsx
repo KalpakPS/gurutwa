@@ -9,14 +9,7 @@ const HomePage = () => {
         <div className="homepage" style={{ backgroundColor: '#11142E', height: '100vh', color: 'white' }}>
             
             <Hero />
-            <section className="features">
-                <h2>Our Features</h2>
-                <div className="feature-list">
-                    <div className="feature-item">Feature 1</div>
-                    <div className="feature-item">Feature 2</div>
-                    <div className="feature-item">Feature 3</div>
-                </div>
-            </section>
+            
             <section className="about">
                 <h2>About Us</h2>
                 <p>We are a company that does amazing things.</p>
