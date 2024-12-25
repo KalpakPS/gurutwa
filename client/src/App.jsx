@@ -4,7 +4,8 @@ import VideoAnimation from './components/video/VideoAnimation'
 import NavBar from './components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';  // Import Bootstrap CSS
 import HomePage from './pages/HomePage/HomePage';
-
+import { Route, Routes, useLocation } from "react-router-dom";
+import Events from './components/events/Events';
 
 const App = () => {
   const [isLoading, setLoading] = useState(true)
@@ -28,10 +29,12 @@ const App = () => {
     <div>
       <Loading isLoading={isLoading} />
       <VideoAnimation showVideo={showVideo} />
-      <div>
-        <NavBar />
-      </div>
-      <HomePage />
+      <NavBar />
+      <Routes>
+        <Route path="/events" element={<Events />} />
+        <Route path='/' element={<HomePage />} />
+      </Routes>
+
     </div>
   )
 }
