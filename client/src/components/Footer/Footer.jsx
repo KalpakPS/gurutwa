@@ -1,5 +1,5 @@
 import React from "react";
-import gurutwaLogo from "../../../public/GURUTWA logo white.png";
+import gurutwaLogo from "/GURUTWA logo white.png";
 import classes from "./Footer.module.css";
 
 const gurutwaInsta = "https://www.instagram.com/gurutwa.snmimt/";
@@ -55,7 +55,7 @@ const Footer = () => {
               />
             </div>
             <div>
-              <p>SNM Institute of Management and Technology, Maliankara</p>
+              <p>SNM Institute of Management and Technology, Maliankara, Kerala</p>
             </div>
           </div>
           <div className={classes.footer_contact}>
