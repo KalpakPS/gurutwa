@@ -8,6 +8,7 @@ import './index.css'
 import Footer from './components/Footer/Footer'
 import { Route, Routes } from 'react-router-dom';
 import EventsPage from './pages/EventsPage/EventsPage';
+import About from './components/About/About';
 
 const App = () => {
   const [isLoading, setLoading] = useState(true)
@@ -32,11 +33,11 @@ const App = () => {
       <Loading isLoading={isLoading} />
       <VideoAnimation showVideo={showVideo} />
         <NavBar />
-        <HomePage />
-        {/*<Routes>
+        <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/events' element={<EventsPage />}/>
-        </Routes>*/}
+          <Route path='/about' element={<About />}/>
+        </Routes>
         <Footer />
     </div>
   )

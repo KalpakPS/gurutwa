@@ -1,8 +1,6 @@
-
-
 const EventsPage = () => {
     return (
-        <div>
+        <div style={{ minHeight: '100vh', backgroundColor: '#F0F0F0', padding: '20px' }}>
             <h1>The </h1>
             <h1>Different </h1>
             <h1>Events</h1>
