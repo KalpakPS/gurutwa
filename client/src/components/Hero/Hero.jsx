@@ -1,5 +1,5 @@
 import React from 'react';
-import './Hero.module.css';
+import './Hero.css';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const Hero = () => {
