@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react'
 import Loading from './components/Loading'
 import VideoAnimation from './components/video/VideoAnimation'
-import NavBar from './components/NavBar';
+import NavBar from './components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';  // Import Bootstrap CSS
-import Events from './components/Events';
-import { Router, Routes, Route } from 'react-router-dom'
+import HomePage from './pages/HomePage/HomePage';
+import './index.css'
+import { Route, Routes } from 'react-router-dom';
+import EventsPage from './pages/EventsPage/EventsPage';
 
 const App = () => {
   const [isLoading, setLoading] = useState(true)
@@ -28,21 +30,12 @@ const App = () => {
     <div>
       <Loading isLoading={isLoading} />
       <VideoAnimation showVideo={showVideo} />
-
-      {!isLoading && !showVideo && (
-        <div>
-          <h1>Welcome to Gurutwa Tech Fest</h1>
-          <p>Exciting events and updates are coming soon!</p>
-          <Router>
-            <NavBar />
-            <Routes>
-              <Route path='/events' element={<Events/>}/>
-              <Route path='/' element={<HomePage />} />
-            </Routes>
-          </Router>
-          
-        </div>
-      )}
+        <NavBar />
+        <HomePage />
+        {/*<Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/events' element={<EventsPage />}/>
+        </Routes>*/}
     </div>
   )
 }
