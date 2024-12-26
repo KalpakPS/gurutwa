@@ -4,9 +4,9 @@ import VideoAnimation from './components/video/VideoAnimation'
 import NavBar from './components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';  // Import Bootstrap CSS
 import HomePage from './pages/HomePage/HomePage';
+import './index.css'
 import { Route, Routes } from 'react-router-dom';
 import EventsPage from './pages/EventsPage/EventsPage';
-
 
 const App = () => {
   const [isLoading, setLoading] = useState(true)
