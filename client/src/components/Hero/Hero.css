@@ -15,3 +15,13 @@
     height: 100%;
     z-index: -1;
 }
+
+.hero-logo{
+    width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-logo{
+        width: 300px;
+    }
+}
