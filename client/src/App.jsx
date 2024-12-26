@@ -32,10 +32,10 @@ const App = () => {
       <VideoAnimation showVideo={showVideo} />
         <NavBar />
         <HomePage />
-        <Routes>
+        {/*<Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/events' element={<EventsPage />}/>
-        </Routes>
+        </Routes>*/}
     </div>
   )
 }
