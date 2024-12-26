@@ -5,6 +5,7 @@ import NavBar from './components/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';  // Import Bootstrap CSS
 import HomePage from './pages/HomePage/HomePage';
 import './index.css'
+import Footer from './components/Footer/Footer'
 import { Route, Routes } from 'react-router-dom';
 import EventsPage from './pages/EventsPage/EventsPage';
 import About from './components/About/About';
@@ -37,6 +38,7 @@ const App = () => {
           <Route path='/events' element={<EventsPage />}/>
           <Route path='/about' element={<About />}/>
         </Routes>
+        <Footer />
     </div>
   )
 }
