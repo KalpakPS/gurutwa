@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage/HomePage';
 import './index.css'
 import { Route, Routes } from 'react-router-dom';
 import EventsPage from './pages/EventsPage/EventsPage';
+import About from './components/About/About';
 
 const App = () => {
   const [isLoading, setLoading] = useState(true)
@@ -34,6 +35,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/events' element={<EventsPage />}/>
+          <Route path='/about' element={<About />}/>
         </Routes>
     </div>
   )
