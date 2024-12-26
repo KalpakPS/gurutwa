@@ -3,16 +3,3 @@
     padding: 20px;
 }
 
-.about, .contact {
-    margin: 20px 0;
-}
-
-.about h2, .contact h2 {
-    color: #ffffff;
-    
-    padding-bottom: 10px;
-}
-
-.about p, .contact p {
-    color: #ffffff;
-}

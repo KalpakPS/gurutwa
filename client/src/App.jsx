@@ -4,7 +4,7 @@ import VideoAnimation from './components/video/VideoAnimation'
 import NavBar from './components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';  // Import Bootstrap CSS
 import HomePage from './pages/HomePage/HomePage';
-
+import './index.css'
 
 const App = () => {
   const [isLoading, setLoading] = useState(true)
