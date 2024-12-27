@@ -2,12 +2,13 @@ import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
 import Nav from 'react-bootstrap/Nav'
 import { Link } from 'react-router-dom'
+import './NavBar.css'
 
 const NavBar = () => {
 
     return (
         <>
-        <Navbar bg="dark" variant="dark" expand="lg">
+        <Navbar bg="dark" variant="dark" expand="lg" className="navbar-custom">
             <Navbar.Brand href="/" className="ps-3">
             <img src="/GURUTWA logo white.png" 
             alt="Logo" 

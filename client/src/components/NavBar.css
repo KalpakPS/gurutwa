@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&display=swap');
+
+/* General Font for Navbar */
+.navbar-custom {
+    font-family: 'Barrio', sans-serif; /* Set the Roboto font */
+    background-color: #021f3c !important; /* Dark Gray */
+    border-bottom: 2px solid #e0ddea; /* Optional bottom border */
+    padding-right: 2rem;
+}
+
+/* Navbar Links - Default Style */
+.navbar-custom .nav-link {
+    color: #fff !important; /* White text */
+    font-size: 2.5rem; /* Adjust font size */
+    font-weight: 500; /* Normal weight */
+    text-transform: uppercase; /* Optional uppercase styling */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+    position: relative; /* Needed for pseudo-elements */
+    margin: 0 15px;
+}
+
+/* Hover Effect - Underline Stroke */
+.navbar-custom .nav-link:after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Position the underline */
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #ff6600; /* Orange underline */
+    width: 0%;
+    transition: width 0.3s ease; /* Smooth expand effect */
+}
+
+/* Hover State */
+.navbar-custom .nav-link:hover {
+    color: #ff6600 !important; /* Change text color to orange */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.navbar-custom .nav-link:hover:after {
+    width: 100%; /* Expand underline to full width */
+}
+
+/* Active Link Styling */
+.navbar-custom .nav-link.active {
+    color: #ff6600 !important; /* Match hover color */
+    font-weight: 700; /* Bold for active */
+}
+
+/* Ensure adequate spacing on the right for navbar items */
+.navbar-custom .ms-auto {
+    margin-right: 1rem; /* Adjust spacing from the far right */
+}
