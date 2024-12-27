@@ -1,17 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap');
 
 /* Change Navbar background color */
 .navbar-custom {
-    font-family: 'Chakra Petch', sans-serif; /* Use Roboto font */
-    background-color: #021b35 !important; /* Dark Gray */
-    border-bottom: 2px solid #f2f0ee; /* Optional bottom border */
+    font-family: 'Chakra Petch', sans-serif; /* Use Chakra Petch font */
+    background-color: #030543 !important; /* Dark Gray */
+    border-bottom: 2px solid #f2f0ee; 
     padding-right: 2rem; /* Adjust padding on the right for positioning */
+    position: fixed; /* Make the navbar fixed */
+    top: 0; /* Position it at the top */
+    width: 100%; /* Full width */
+    z-index: 1050; /* Ensure it appears above other content */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.navbar-custom.scrolled {
+    background-color: rgba(0, 0, 0, 0.8) !important; /* Make background transparent when scrolled */
+    border-bottom: transparent; 
 }
 
 /* Style Navbar links */
 .navbar-custom .nav-link {
     color: #efeded !important; /* White text */
-    font-weight: 500;
+    font-weight: 900;
     font-size: 2rem;
     text-transform: uppercase; 
     margin: 0 15px; /* Add spacing between links */
@@ -53,12 +63,3 @@
 .navbar-custom .ms-auto {
     margin-right: 1rem; /* Adjust spacing from the far right */
 }
-
-
-/* .navbar {
-    transition: background-color 0.5s ease;
-}
-
-.navbar.scrolled {
-    background-color: rgba(0, 0, 0, 0.8) !important;
-} */
