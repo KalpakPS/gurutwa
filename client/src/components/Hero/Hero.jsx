@@ -6,7 +6,7 @@ const Hero = () => {
     return (
         <div className="hero">
             <DotLottieReact
-                src="https://lottie.host/0795a3d5-9ba9-4997-9933-fe973bc3b21f/P0aD9ojFTn.lottie"
+                src="https://lottie.host/555e75eb-7be5-403b-8427-b5afdf78fc2f/7CkKTpNZO2.lottie"
                 loop
                 autoplay
                 className="hero-background"
