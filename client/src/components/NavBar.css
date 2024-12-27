@@ -1,7 +1,64 @@
-.navbar {
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Change Navbar background color */
+.navbar-custom {
+    font-family: 'Chakra Petch', sans-serif; /* Use Roboto font */
+    background-color: #021b35 !important; /* Dark Gray */
+    border-bottom: 2px solid #f2f0ee; /* Optional bottom border */
+    padding-right: 2rem; /* Adjust padding on the right for positioning */
+}
+
+/* Style Navbar links */
+.navbar-custom .nav-link {
+    color: #efeded !important; /* White text */
+    font-weight: 500;
+    font-size: 2rem;
+    text-transform: uppercase; 
+    margin: 0 15px; /* Add spacing between links */
+    transition: color 0.3s ease, transform 0.3s ease; /* Add smooth transitions */
+    position: relative; /* Required for :after pseudo-element positioning */
+}
+
+/* Underline hover effect */
+.navbar-custom .nav-link:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: #bcb5af;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+/* Hover effect for Navbar links */
+.navbar-custom .nav-link:hover {
+    color: #ff6600 !important; /* Orange on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+    text-decoration: line-through;
+}
+
+.navbar-custom .nav-link:hover:after {
+    width: 100%; /* Underline spans the full width on hover */
+}
+
+/* Active link styling */
+.navbar-custom .nav-link.active {
+    color: #ff6600 !important; /* Orange */
+    font-weight: bolder !important;
+}
+
+/* Ensure adequate spacing on the right for navbar items */
+.navbar-custom .ms-auto {
+    margin-right: 1rem; /* Adjust spacing from the far right */
+}
+
+
+/* .navbar {
     transition: background-color 0.5s ease;
 }
 
 .navbar.scrolled {
     background-color: rgba(0, 0, 0, 0.8) !important;
-}
+} */
