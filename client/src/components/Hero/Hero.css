@@ -11,7 +11,7 @@
 
 .hero-background {
     position: absolute;
-    width: 150rem;
+    width: 300rem;
     z-index: -1;
 }
 
@@ -25,7 +25,7 @@
     }
     .hero-background {
         position: absolute;
-        width: 100rem;
+        width: 250rem;
         z-index: -1;
     }
 }
