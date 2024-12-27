@@ -36,7 +36,7 @@ const NavBar = () => {
                     src="/GURUTWA logo white.png"
                     alt="Logo"
                     width="150"
-                    height="48"
+                    height="61"
                     className="d-inline-block align-text-top"
                 />
             </Navbar.Brand>
