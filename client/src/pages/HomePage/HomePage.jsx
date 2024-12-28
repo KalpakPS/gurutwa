@@ -4,6 +4,7 @@ import './HomePage.css';
 import Contact from '../../components/Faq/Contact'
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import About from '../../components/About/About';
+import EventSection from '../../components/EventSection/EventSection';
 
 
 const HomePage = () => {
@@ -11,6 +12,7 @@ const HomePage = () => {
         <div className="homepage">   
             <Hero />
             <About />
+            <EventSection />
             <Contact />
         </div>
     );
