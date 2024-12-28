@@ -9,6 +9,7 @@ import Footer from './components/Footer/Footer'
 import { Route, Routes } from 'react-router-dom';
 import EventsPage from './pages/EventsPage/EventsPage';
 import About from './components/About/About';
+import SingleEventPage from './pages/SingleEventPage/SingleEventPage';
 
 const App = () => {
   const [isLoading, setLoading] = useState(true)
@@ -36,6 +37,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/events' element={<EventsPage />}/>
+          <Route path="/events/:eventId" element={<SingleEventPage />} />
           <Route path='/about' element={<About />}/>
         </Routes>
         <Footer />
