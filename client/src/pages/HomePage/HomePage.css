@@ -3,3 +3,8 @@
     padding: 20px;
 }
 
+body{
+    background-color: #11142E;
+    color: white;
+    overflow-x: hidden;
+}

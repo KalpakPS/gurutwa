@@ -8,7 +8,7 @@ import About from '../../components/About/About';
 
 const HomePage = () => {
     return (
-        <div className="homepage" style={{ backgroundColor: '#11142E', color: 'white' }}>   
+        <div className="homepage">   
             <Hero />
             <About />
             <Contact />
