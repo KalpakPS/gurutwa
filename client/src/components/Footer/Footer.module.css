@@ -15,7 +15,7 @@
 }
 
 .footer_first {
-  width: 35%;
+  width: 50%;
   text-align: left;
   padding: 20px 40px;
 }
@@ -30,9 +30,6 @@
   width: 80%;
   color: hsla(0, 0%, 100%, 0.5);
   font-size: 16px;
-}
-.footer_second {
-  width: 50%;
 }
 
 .footer_page_link {
@@ -127,11 +124,6 @@
     width: 100%;
     text-align: center;
     font-size: 18px;
-  }
-  .footer_second {
-    width: 80%;
-    margin: 20px 0px;
-    text-align: center;
   }
   .footer_third {
     width: 80%;
