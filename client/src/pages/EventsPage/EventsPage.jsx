@@ -1,3 +1,6 @@
+import React from 'react';
+import './EventsPage.css';
+
 const EventsPage = () => {
     return (
         <div style={{ minHeight: '100vh', backgroundColor: '#F0F0F0', padding: '20px' }}>

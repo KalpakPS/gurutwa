@@ -1,5 +1,6 @@
 import React from 'react';
 import './Hero.css';
+import Button from '../Button/Button';
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const Hero = () => {
@@ -12,7 +13,7 @@ const Hero = () => {
                 className="hero-background"
             />
             <img src="/GURUTWA logo white.png" alt="Logo" className="hero-logo" />
-            
+            <Button />
         </div>
     );
 };
