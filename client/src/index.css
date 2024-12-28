@@ -1,5 +1,6 @@
 body{
     background-color: #11142E;
+    overflow-x: hidden;
 }
 html {
     font-size: 62.5%;
@@ -12,4 +13,17 @@ html {
     html {
       font-size: 45%;
     }
+    body{
+      overflow-x: hidden;
+    }
   }
+  @media (max-width: 768px) { /* Adjust breakpoint as needed */
+
+    html, body {
+      overflow-x: hidden;
+    }
+    body {
+      position: relative
+    }
+  }
+  
