@@ -1,5 +1,7 @@
 body{
     background-color: #11142E;
+    background: url(./assets/backGround.svg);
+    width: 100vw;
     overflow-x: hidden;
 }
 html {

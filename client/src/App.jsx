@@ -20,13 +20,13 @@ const App = () => {
     // Hide loading screen and show video after 5 seconds
     setTimeout(() => {
       setLoading(false); // Stop loading animation
-      setShowVideo(true); // Show video
+      //setShowVideo(true); // Show video
     }, 4000);
 
     // Hide video after 3 more seconds
-    setTimeout(() => {
+    /*setTimeout(() => {
       setShowVideo(false); // Hide video
-    }, 8000); // Total 8 seconds (5 + 3)
+    }, 8000); // Total 8 seconds (5 + 3)*/
   }, []);
 
   return (

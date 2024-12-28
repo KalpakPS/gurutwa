@@ -7,7 +7,7 @@
     padding: 4rem;
     align-items: center;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.432);
+    background-color: rgb(1, 1, 16);
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -35,11 +35,11 @@
 
 @media screen and (max-width: 768px) {
     .hero-logo {
-        width: 250px;
+        width: 300px;
     }
     .hero-background {
         position: absolute;
-        width: 1200px;
+        width: 1500px;
         z-index: -1;
     }
 }
