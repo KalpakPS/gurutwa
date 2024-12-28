@@ -31,7 +31,7 @@ const NavBar = () => {
             expand="lg"
             className={`navbar-custom ${isScrolled ? 'scrolled' : ''} sticky-top`}
         >
-            <Navbar.Brand href="/" className="ps-3">
+            <Navbar.Brand as={Link} to="/" className="ps-3">
                 <img
                     src="/GURUTWA logo white.png"
                     alt="Logo"
