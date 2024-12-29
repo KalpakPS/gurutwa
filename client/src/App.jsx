@@ -10,12 +10,12 @@ import { Route, Routes } from 'react-router-dom';
 import EventsPage from './pages/EventsPage/EventsPage';
 import About from './components/About/About';
 import SingleEventPage from './pages/SingleEventPage/SingleEventPage';
+import ScrollToTop from './components/ScrollToTop'; // Import ScrollToTop
 
 const App = () => {
   const [isLoading, setLoading] = useState(true)
   const [showVideo, setShowVideo] = useState(false); // State for video animation
 
- 
   useEffect(() => {
     // Hide loading screen and show video after 5 seconds
     setTimeout(() => {
@@ -33,14 +33,15 @@ const App = () => {
     <div>
       <Loading isLoading={isLoading} />
       <VideoAnimation showVideo={showVideo} />
-        <NavBar />
-        <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/events' element={<EventsPage />}/>
-          <Route path="/events/:eventId" element={<SingleEventPage />} />
-          <Route path='/about' element={<About />}/>
-        </Routes>
-        <Footer />
+      <NavBar />
+      <ScrollToTop /> {/* Add ScrollToTop component */}
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+        <Route path='/events' element={<EventsPage />}/>
+        <Route path="/events/:eventId" element={<SingleEventPage />} />
+        <Route path='/about' element={<About />}/>
+      </Routes>
+      <Footer />
     </div>
   )
 }

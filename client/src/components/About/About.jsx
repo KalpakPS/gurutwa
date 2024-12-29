@@ -11,15 +11,14 @@ const About = () => {
             <h3 className={classes.heading}>About</h3>
             <h2 className={classes.heading1}>GURUTWA 25</h2>
             <p className={classes.para}>
-              Gurutwa is a technical festival offering a diverse range of events
-              and competitions focused on technology and innovation. It provides
-              a platform for individuals to showcase their skills, learn from
-              others, and foster creativity, teamwork, and problem-solving
-              abilities. By exposing attendees to the latest advancements in
-              technology, Gurutwa helps broaden their knowledge and skillset,
-              making it a fun, engaging, and enriching experience for all
-              attendees. Get ready to be a part of the biggest technical
-              extravaganza of the year 2k25 – Gurutwa!
+            Gurutwa is a vibrant technical festival that showcases talent and 
+            creativity through a variety of events and competitions.
+            It serves as a platform for participants to demonstrate their skills, 
+            collaborate with others, and enhance their creativity, teamwork, 
+            and problem-solving abilities. By showcasing the latest trends and 
+            advancements in technology, Gurutwa offers attendees a chance to expand 
+            their knowledge and skillset. Join us for an engaging and enriching 
+            experience at Gurutwa 2k25 — inspiring innovative minds!
             </p>
           </div>
 
