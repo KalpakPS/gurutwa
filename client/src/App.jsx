@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import Loading from './components/Loading'
 import VideoAnimation from './components/video/VideoAnimation'
-import NavBar from './components/Navbar';
+import NavBar from './components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';  // Import Bootstrap CSS
 import HomePage from './pages/HomePage/HomePage';
 import './index.css'
