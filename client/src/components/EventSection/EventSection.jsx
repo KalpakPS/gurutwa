@@ -12,15 +12,16 @@ const EventSection = () => {
           <div className={classes.details}>
             <h2 className={classes.heading1}>EVENTS</h2>
             <p className={classes.para}>
-              Gurutwa is a technical festival offering a diverse range of events
-              and competitions focused on technology and innovation. It provides
-              a platform for individuals to showcase their skills, learn from
-              others, and foster creativity, teamwork, and problem-solving
-              abilities. By exposing attendees to the latest advancements in
-              technology, Gurutwa helps broaden their knowledge and skillset,
-              making it a fun, engaging, and enriching experience for all
-              attendees. Get ready to be a part of the biggest technical
-              extravaganza of the year 2k25 – Gurutwa!
+            Gurutwa's events are designed to ignite innovation and inspire 
+            creativity. From technical challenges and coding competitions 
+            to workshops and hackathons, our diverse lineup offers something 
+            for everyone. These events provide participants with opportunities 
+            to test their skills, collaborate with peers, and tackle real-world 
+            problems through teamwork and critical thinking. Whether you're 
+            a tech enthusiast, a problem-solver, or a creative thinker, 
+            Gurutwa's events promise an engaging and enriching experience 
+            that pushes boundaries and celebrates technological excellence. 
+            Get ready to learn, compete, and innovate at Gurutwa 2k25!
             </p>
           </div>
         </div>
