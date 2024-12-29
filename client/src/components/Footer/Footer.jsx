@@ -58,7 +58,7 @@ const Footer = () => {
               <p>SNM Institute of Management and Technology, Maliankara, Kerala</p>
             </div>
           </div>
-          <div className={classes.footer_contact}>
+          {/*<div className={classes.footer_contact}>
             <div>
               <img
                 className={classes.footer_contact_image}
@@ -69,7 +69,7 @@ const Footer = () => {
             <div>
               <p>1234567890</p>
             </div>
-          </div>
+          </div>*/}
           <div className={classes.footer_contact}>
             <div>
               <img
@@ -79,7 +79,7 @@ const Footer = () => {
               />
             </div>
             <div>
-              <p className={classes.mail}>example@gmail.com</p>
+              <a href="mailto:snmimtgurutwa@gmail.com?subject=Enquiry&body=Hello!" className={classes.mail}>snmimtgurutwa@gmail.com</a>
             </div>
           </div>
         </div>

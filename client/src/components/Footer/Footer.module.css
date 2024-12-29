@@ -106,6 +106,14 @@
 .footer_grabbit_image {
   height: 50px;
 }
+.mail{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+.mail:hover{
+  color: #117fec;
+}
 
 @media (max-width: 500px) {
   .footer {
@@ -146,6 +154,6 @@
     font-size: 14px;
   }
   .mail {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
