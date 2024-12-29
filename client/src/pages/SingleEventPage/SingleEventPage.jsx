@@ -7,6 +7,13 @@ const SingleEventPage = () => {
   const { eventId } = useParams();
   console.log(eventId);
 
+  const handleRegisterClick = (e) => {
+    
+    e.preventDefault(); // Prevent the NavLink navigation
+    e.stopPropagation(); // Stop the click from propagating to the NavLink
+    window.open(link, "_blank");
+  };
+
   const requiredEvent = eventsData.find((event) => event.id === +eventId);
   const {
     name,
@@ -117,7 +124,9 @@ const SingleEventPage = () => {
                 })}
               </div>
             )}
-            
+            <div className={classes.buttonWrapper}>
+              <button className={`${classes.btn} ${classes.fill}`} onClick={handleRegisterClick}>REGISTER</button>
+            </div>
           </div>
         </div>
       </div>
