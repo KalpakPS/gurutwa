@@ -32,7 +32,7 @@ const App = () => {
   return (
     <div>
       <Loading isLoading={isLoading} />
-      <VideoAnimation showVideo={showVideo} />
+      {/*<VideoAnimation showVideo={showVideo} />*/}
       <NavBar />
       <ScrollToTop /> {/* Add ScrollToTop component */}
       <Routes>

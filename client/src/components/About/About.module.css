@@ -36,8 +36,7 @@
     color: transparent;
     font-weight: 700;
     white-space: nowrap;
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: #fff;
+    -webkit-text-fill-color: #fff;
   }
   
   @media screen and (max-width: 480px) {
