@@ -25,7 +25,7 @@
 
 .hero-background {
     position: absolute;
-    width: 2400px;
+    width: 1100px;
     z-index: -1;
 }
 
@@ -39,7 +39,7 @@
     }
     .hero-background {
         position: absolute;
-        width: 1500px;
+        width: 650px;
         z-index: -1;
     }
 }
