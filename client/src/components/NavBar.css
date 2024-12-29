@@ -1,35 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap');
 
-/* Change Navbar background color */
+/* Common styles for both desktop and mobile */
 .navbar-custom {
-    font-family: 'Chakra Petch', sans-serif; /* Use Chakra Petch font */
-    background-color: #030543 !important; /* Dark Gray */
-    border-bottom: 2px solid #f2f0ee; 
-    padding-right: 2rem; /* Adjust padding on the right for positioning */
-    position: fixed; /* Make the navbar fixed */
-    top: 0; /* Position it at the top */
-    width: 100%; /* Full width */
-    z-index: 1050; /* Ensure it appears above other content */
-    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: #030543 !important;
+    border-bottom: 2px solid #f2f0ee;
+    padding-right: 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1050;
+    transition: background-color 0.3s ease;
 }
 
 .navbar-custom.scrolled {
-    background-color: rgba(0, 0, 0, 0.8) !important; /* Make background transparent when scrolled */
-    border-bottom: transparent; 
+    background-color: rgba(0, 0, 0, 0.8) !important; /* Maintain visibility */
+    border-bottom: transparent;
 }
 
-/* Style Navbar links */
+/* Desktop-specific styles */
 .navbar-custom .nav-link {
-    color: #efeded !important; /* White text */
+    color: #efeded !important;
     font-weight: 900;
     font-size: 2rem;
-    text-transform: uppercase; 
-    margin: 0 15px; /* Add spacing between links */
-    transition: color 0.3s ease, transform 0.3s ease; /* Add smooth transitions */
-    position: relative; /* Required for :after pseudo-element positioning */
+    text-transform: uppercase;
+    margin: 0 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
 }
 
-/* Underline hover effect */
+/* Hover and active link effects */
 .navbar-custom .nav-link:after {
     content: '';
     position: absolute;
@@ -42,24 +42,75 @@
     transition: width 0.3s ease;
 }
 
-/* Hover effect for Navbar links */
 .navbar-custom .nav-link:hover {
-    color: #ff6600 !important; /* Orange on hover */
-    transform: scale(1.1); /* Slight zoom effect */
+    color: #ff6600 !important;
+    transform: scale(1.1);
     text-decoration: line-through;
 }
 
-.navbar-custom .nav-link:hover:after {
-    width: 100%; /* Underline spans the full width on hover */
-}
-
-/* Active link styling */
 .navbar-custom .nav-link.active {
-    color: #ff6600 !important; /* Orange */
+    color: #ff6600 !important;
     font-weight: bolder !important;
 }
 
-/* Ensure adequate spacing on the right for navbar items */
-.navbar-custom .ms-auto {
-    margin-right: 1rem; /* Adjust spacing from the far right */
+/* Navbar toggler styles */
+/* Navbar toggler styles */
+.navbar-custom .navbar-toggler {
+    border-color: #ffffff; /* White border by default */
+    transition: border-color 0.3s ease;
+}
+
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* White icon by default */
+    transition: background-image 0.3s ease;
+}
+
+/* Hover state for navbar toggler */
+.navbar-custom .navbar-toggler:hover,
+.navbar-custom .navbar-toggler:focus {
+    border-color: #ff6600; /* Orange border on hover */
+}
+
+.navbar-custom .navbar-toggler:hover .navbar-toggler-icon,
+.navbar-custom .navbar-toggler:focus .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 102, 0, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Orange icon on hover */
+}
+
+/* Active state for toggler when the menu is expanded */
+.navbar-custom .navbar-toggler[aria-expanded="true"] {
+    border-color: #ff6600; /* Orange border when active */
+}
+
+.navbar-custom .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 102, 0, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Orange icon when active */
+}
+
+
+
+
+
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+    .navbar-custom {
+        background-color: #030543 !important; /* Ensure navbar remains visible */
+        position: fixed !important;
+        top: 0;
+        z-index: 1050;
+    }
+
+    .navbar-custom.scrolled {
+        background-color: rgba(0, 0, 0, 0.8) !important; /* Slightly transparent when scrolled */
+    }
+
+    .navbar-custom .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.9); /* Slightly transparent */
+        padding: 1rem;
+    }
+
+    .navbar-custom .nav-link {
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 0.5rem 0;
+    }
 }

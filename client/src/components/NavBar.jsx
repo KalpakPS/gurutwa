@@ -7,6 +7,8 @@ import './Navbar.css';
 
 const NavBar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
+    const [expanded, setExpanded] = useState(false);
+
     
     useEffect(() => {
         const handleScroll = () => {
@@ -26,10 +28,22 @@ const NavBar = () => {
         };
     }, []);
 
+    const handleToggle = () => {
+        setExpanded(!expanded);
+
+    };
+
+    const handleClose = () => {
+        setTimeout(() => {
+            setExpanded(false);
+    }, 200);
+    };
+
+
     return (
         <Navbar
             expand="lg"
-            className={`navbar-custom ${isScrolled ? 'scrolled' : ''} sticky-top`}
+            className={`navbar-custom ${isScrolled ? 'scrolled' : ''} sticky-top`} expanded={expanded}
         >
             <Navbar.Brand as={Link} to="/" className="ps-3">
                 <img
@@ -40,16 +54,16 @@ const NavBar = () => {
                     className="d-inline-block align-text-top"
                 />
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle}/>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ms-auto">
-                    <Nav.Link as={Link} to="/">
+                    <Nav.Link as={Link} to="/" onClick={handleClose}>
                         Home
                     </Nav.Link>
-                    <Nav.Link as={Link} to="/about">
+                    <Nav.Link as={Link} to="/about" onClick={handleClose}>
                         About
                     </Nav.Link>
-                    <Nav.Link as={Link} to="/events">
+                    <Nav.Link as={Link} to="/events" onClick={handleClose}>
                         Events
                     </Nav.Link>
                 </Nav>
