@@ -1,5 +1,6 @@
 import classes from './EventSection.module.css'
 import event from './event.svg'
+import Button from '../Button/Button';
 
 const EventSection = () => {
   return (
@@ -23,6 +24,7 @@ const EventSection = () => {
             that pushes boundaries and celebrates technological excellence. 
             Get ready to learn, compete, and innovate at Gurutwa 2k25!
             </p>
+            <Button />
           </div>
         </div>
       </section>
