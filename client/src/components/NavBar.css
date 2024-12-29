@@ -58,6 +58,8 @@
 .navbar-custom .navbar-toggler {
     border-color: #ffffff; /* White border by default */
     transition: border-color 0.3s ease;
+    margin-right: 20px;
+    font-size: 15px;
 }
 
 .navbar-custom .navbar-toggler-icon {
