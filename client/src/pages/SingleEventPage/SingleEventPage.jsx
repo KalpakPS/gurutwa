@@ -14,6 +14,22 @@ const SingleEventPage = () => {
     window.open(link, "_blank");
   };
 
+  const handleShareClick = () => {
+    const currentUrl = window.location.href;
+
+    if (navigator.share) {
+      navigator.share({
+        title: name,
+        text: `Check out this event: ${name}\n${description}`,
+        url: currentUrl,
+      })
+        .then(() => console.log("Shared successfully"))
+        .catch((error) => console.error("Error sharing:", error));
+    } else {
+      alert("Sharing is not supported in this browser.");
+    }
+  };
+
   const requiredEvent = eventsData.find((event) => event.id === +eventId);
   const {
     name,
@@ -125,8 +141,19 @@ const SingleEventPage = () => {
               </div>
             )}
             <div className={classes.buttonWrapper}>
-              <button className={`${classes.btn} ${classes.fill}`} onClick={handleRegisterClick}>REGISTER</button>
-            </div>
+            <button
+              className={`${classes.btn} ${classes.fill}`}
+              onClick={handleRegisterClick}
+            >
+              REGISTER
+            </button>
+            <button
+              className={`${classes.btn} ${classes.outline}`}
+              onClick={handleShareClick}
+            >
+              SHARE
+            </button>
+          </div>
           </div>
         </div>
       </div>

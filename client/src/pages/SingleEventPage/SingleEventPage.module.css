@@ -122,6 +122,20 @@
   transition: all .3s ease;
 }
 
+.outline {
+  background: transparent;
+  color: rgba(0, 212, 255, 0.9);
+  border: 1px solid rgba(0, 212, 255, 0.6);
+  transition: all .3s ease;
+}
+
+.outline:hover {
+  transform: scale(1.125);
+  color: rgba(255, 255, 255, 0.9);
+  border-color: rgba(255, 255, 255, 0.9);
+  transition: all .3s ease;
+}
+
 
 @media screen and (max-width: 768px) {
   .singleEventCard {
