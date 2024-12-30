@@ -58,18 +58,6 @@ const Footer = () => {
               <p>SNM Institute of Management and Technology, Maliankara, Kerala</p>
             </div>
           </div>
-          {/*<div className={classes.footer_contact}>
-            <div>
-              <img
-                className={classes.footer_contact_image}
-                src="https://img.icons8.com/ios-filled/50/ffffff/outgoing-call.png"
-                alt=""
-              />
-            </div>
-            <div>
-              <p>1234567890</p>
-            </div>
-          </div>*/}
           <div className={classes.footer_contact}>
             <div>
               <img
