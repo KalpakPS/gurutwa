@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import Loading from './components/Loading'
-import VideoAnimation from './components/video/VideoAnimation'
 import NavBar from './components/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';  // Import Bootstrap CSS
 import HomePage from './pages/HomePage/HomePage';
@@ -11,6 +10,10 @@ import EventsPage from './pages/EventsPage/EventsPage';
 import About from './components/About/About';
 import SingleEventPage from './pages/SingleEventPage/SingleEventPage';
 import ScrollToTop from './components/ScrollToTop'; // Import ScrollToTop
+
+import ReactGA from 'react-ga4'; // Import Google Analytics
+const TRACKING_ID = "G-EWC1993VBR";
+ReactGA.initialize(TRACKING_ID);
 
 const App = () => {
   const [isLoading, setLoading] = useState(true)
