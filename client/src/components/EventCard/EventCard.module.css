@@ -101,3 +101,9 @@
   filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.125));
   transition: all .3s ease;
 }
+
+@media (max-width: 756px) {
+  .btn{
+    font-size: 9px;
+  }
+}
