@@ -45,7 +45,6 @@
 .navbar-custom .nav-link:hover {
     color: #ff6600 !important;
     transform: scale(1.1);
-    text-decoration: line-through;
 }
 
 .navbar-custom .nav-link.active {

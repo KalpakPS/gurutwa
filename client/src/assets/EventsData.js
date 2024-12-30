@@ -23,8 +23,7 @@ export const eventsData = [
         location: "abc lab",
         date: "2 and 4 Jan",
         note: [
-        "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+        "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
         ],
         link: "https://docs.google.com/forms",
     },
@@ -50,8 +49,7 @@ export const eventsData = [
         location: "abc lab",
         date: "2 and 4 Jan",
         note: [
-        "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+            "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
         ],
         link: "https://docs.google.com/forms",
     },
@@ -78,7 +76,6 @@ export const eventsData = [
         date: "2 and 4 Jan",
         note: [
         "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
         ],
         link: "https://docs.google.com/forms",
     },
@@ -105,7 +102,6 @@ export const eventsData = [
         date: "2 and 4 Jan",
         note: [
         "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
-        "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
         ],
         link: "https://docs.google.com/forms",
     },

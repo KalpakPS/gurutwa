@@ -109,7 +109,7 @@
 .mail{
   text-decoration: none;
   color: white;
-  font-size: 16px;
+  font-size: 17px;
 }
 .mail:hover{
   color: #117fec;
@@ -137,6 +137,7 @@
     width: 80%;
   }
   .footer_menu_heading {
+    font-size: 17px;
     text-align: center;
     white-space: nowrap;
   }
@@ -154,6 +155,6 @@
     font-size: 14px;
   }
   .mail {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
