@@ -109,7 +109,7 @@
 .mail{
   text-decoration: none;
   color: white;
-  font-size: 16px;
+  font-size: 17px;
 }
 .mail:hover{
   color: #117fec;
@@ -154,6 +154,6 @@
     font-size: 14px;
   }
   .mail {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
