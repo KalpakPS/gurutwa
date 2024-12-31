@@ -1,8 +1,8 @@
 import React from 'react';
-import Lottie from 'lottie-react'; // Import Lottie
+import Lottie from 'lottie-react';
 import './Hero.css';
 import Button from '../Button/Button';
-import animationData from './Hero.json'; // Import your JSON animation file
+import animationData from './Hero.json'; 
 
 const Hero = () => {
     return (
