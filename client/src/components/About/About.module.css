@@ -12,6 +12,10 @@
     padding: 4rem 5rem;
     border-radius: 15px;
   }
+
+.composition{
+  width: 100%;
+}
   
   @media screen and (max-width: 768px) {
     .about {
