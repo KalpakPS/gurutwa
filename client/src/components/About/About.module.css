@@ -80,6 +80,10 @@
     .heading1 {
       font-size: 5rem;
     }
+
+    .aboutSec{
+      padding-top: 13rem;
+    }
   }
   
   .images {
@@ -90,8 +94,6 @@
     outline-offset: 2rem;
     width: 95%;
   }
-  .btn {
-    margin-bottom: 40px;
-  }
+
   
   
