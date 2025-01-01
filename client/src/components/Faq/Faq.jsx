@@ -5,22 +5,22 @@ const questions = [
   {
     question: "What is GURUTWA 2K25?",
     answer:
-      "GURUTWA 2k25 is a techinical festival conducted at SNMIMT.",
+      "GURUTWA 2K25 is the technical festival of SNMIMT, featuring a diverse range of events, workshops, and competitions designed to inspire innovation, creativity, and technological excellence.",
   },
   {
     question: "What are the Dates and Timings of event?",
     answer:
-      "Will update soon",
+      "The dates and timings for GURUTWA 2K25 will be announced soon. Stay tuned for updates.",
   },
   {
-    question: "How can I participate in the event?",
+    question: "How can I participate in the events?",
     answer:
-      "Will update soon.",
+      "You can participate in the events by registering through our events page. Detailed registration instructions will be provided there.",
   },
   {
     question: "Is there any entry fee for GURUTWA 2k25?",
     answer:
-      "Wil update soon.",
+      "Information regarding the entry fee will be updated soon. Please check back for the latest details.",
   },
 ];
 

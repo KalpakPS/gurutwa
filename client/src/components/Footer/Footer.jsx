@@ -4,7 +4,7 @@ import classes from "./Footer.module.css";
 
 const gurutwaInsta = "https://www.instagram.com/gurutwa.snmimt/";
 
-const kalpak = "https://www.linkedin.com/in/kalpak-p-s-283120227/";
+const kalpak = "https://www.linkedin.com/in/kalpak-p-s/";
 const antony = "https://www.linkedin.com/in/antonypauson/";
 
 const Footer = () => {
